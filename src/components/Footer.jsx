@@ -1,5 +1,5 @@
 import React from 'react';
-import { 
+import {
   FaLinkedin,
   FaYoutube,
   FaArrowRight,
@@ -13,8 +13,8 @@ import {
   FaPhone,
   FaClock,
 } from 'react-icons/fa';
-import { 
-  FiArrowRight 
+import {
+  FiArrowRight
 } from 'react-icons/fi';
 
 const Footer = () => {
@@ -25,7 +25,7 @@ const Footer = () => {
 
   const products = [
     'Mechanical Components',
-    'Electrical Systems', 
+    'Electrical Systems',
     'Hydraulic Systems',
     'Control Panels',
     'Automation Solutions'
@@ -34,7 +34,7 @@ const Footer = () => {
   const enterpriseLinks = [
     'About Us',
     'Leadership',
-    'Careers', 
+    'Careers',
     'Contact',
     'Support'
   ];
@@ -47,7 +47,7 @@ const Footer = () => {
 
   const certifications = [
     'ISO 9001:2015',
-    'AS9100 Certified', 
+    'AS9100 Certified',
     'RoHS Compliant',
     'CE Marked'
   ];
@@ -63,7 +63,7 @@ const Footer = () => {
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-gray-800/20 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
-      
+
       <div className="relative max-w-7xl mx-auto px-6 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
@@ -79,9 +79,9 @@ const Footer = () => {
                 <span className="block text-xs text-gray-400 font-medium tracking-wider mt-1">PRECISION MANUFACTURING</span>
               </div>
             </div>
-            
+
             <p className="text-gray-400 mb-8 max-w-md leading-relaxed text-sm lg:text-base">
-              Global leader in precision industrial manufacturing since 1974. 
+              Global leader in precision industrial manufacturing since 1974.
               Delivering exceptional quality and technical excellence to industry leaders worldwide.
             </p>
 
@@ -98,7 +98,7 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex space-x-5">
               {socialLinks.map((social) => (
-                <a 
+                <a
                   key={social.name}
                   href={social.href}
                   className="group text-gray-400 hover:text-white transition-all duration-300"
@@ -178,9 +178,9 @@ const Footer = () => {
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             {legalLinks.map((item) => (
-              <a 
+              <a
                 key={item.name}
-                href="#" 
+                href="#"
                 className="group text-gray-400 hover:text-white text-sm transition-all duration-300 flex items-center space-x-2"
               >
                 {item.icon}

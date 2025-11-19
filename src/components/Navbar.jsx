@@ -1,22 +1,17 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { 
+import {
   FaTimes,
   FaBars,
   FaLock,
   FaEnvelope,
-  FaKey,
   FaShieldAlt,
-  FaUserPlus,
-  FaSpinner,
   FaArrowRight,
   FaShoppingCart,
   FaFileAlt,
   FaUsers,
   FaTools,
-  FaChevronRight,
   FaIndustry,
-  FaBuilding,
   FaEye,
   FaEyeSlash,
   FaCheckCircle,
@@ -151,7 +146,7 @@ const Navbar = () => {
 
       // Simulate API call
       setTimeout(() => {
-        const user = mockUsers.find(u => 
+        const user = mockUsers.find(u =>
           u.username === formData.username && u.password === formData.password
         );
 
@@ -164,7 +159,7 @@ const Navbar = () => {
           }
 
           setLoginSuccess(true);
-          
+
           // Store login state
           localStorage.setItem('isLoggedIn', 'true');
           localStorage.setItem('user', JSON.stringify(user));
@@ -177,7 +172,7 @@ const Navbar = () => {
             setShowLoginModal(false);
             setLoginSuccess(false);
             setIsLoading(false);
-            
+
             // Navigate to selected portal or default portal
             if (activePortal) {
               navigate(activePortal.route);
@@ -204,7 +199,7 @@ const Navbar = () => {
       <div className="fixed inset-0 z-50 overflow-y-auto">
         <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
           {/* Background Overlay */}
-          <div 
+          <div
             className="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity backdrop-blur-sm"
             onClick={() => setShowLoginModal(false)}
           ></div>
@@ -255,7 +250,7 @@ const Navbar = () => {
 
                       <div className="grid grid-cols-2 gap-3 mb-6">
                         {loginOptions.map((option, index) => (
-                          <div 
+                          <div
                             key={index}
                             onClick={() => handlePortalSelect(option)}
                             className="bg-gray-50 rounded-xl p-4 text-center border-2 border-gray-200 hover:border-blue-500 hover:shadow-md transition-all duration-200 cursor-pointer group"
@@ -424,7 +419,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <Link 
+              <Link
                 to="/"
                 onClick={handleLogoClick}
                 className="flex items-center space-x-3 group"
@@ -446,14 +441,13 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`relative px-4 py-3 transition-all duration-200 font-medium group ${
-                      isActiveLink(item.href)
+                    className={`relative px-4 py-3 transition-all duration-200 font-medium group ${isActiveLink(item.href)
                         ? 'text-gray-900'
                         : 'text-gray-600 hover:text-gray-900'
-                    }`}
+                      }`}
                   >
                     <span className="relative z-10">{item.name}</span>
-                    
+
                     {/* Active Indicator */}
                     {isActiveLink(item.href) && (
                       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full"></div>
@@ -468,7 +462,7 @@ const Navbar = () => {
 
             {/* CTA Buttons */}
             <div className="hidden lg:flex items-center space-x-3">
-              <button 
+              <button
                 onClick={handleLoginClick}
                 className="bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 flex items-center space-x-2"
               >
@@ -479,7 +473,7 @@ const Navbar = () => {
 
             {/* Mobile menu button */}
             <div className="lg:hidden flex items-center space-x-3">
-              <button 
+              <button
                 onClick={handleLoginClick}
                 className="bg-gray-900 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center space-x-2"
               >
@@ -499,34 +493,28 @@ const Navbar = () => {
           {/* Mobile Menu */}
           {isOpen && (
             <div className="lg:hidden border-t border-gray-200/80 bg-white/95 backdrop-blur-xl">
-              <div className="px-2 pt-2 pb-3 space-y-1">
+              <div className="py-4 space-y-1">
                 {menuItems.map((item) => (
                   <Link
                     key={item.name}
                     to={item.href}
                     onClick={() => setIsOpen(false)}
-                    className={`block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
-                      isActiveLink(item.href)
-                        ? 'text-gray-900 bg-gradient-to-r from-blue-50 to-transparent border-l-4 border-blue-500'
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
-                    }`}
+                    className={`block px-4 py-3 text-base font-medium rounded-lg ${isActiveLink(item.href)
+                        ? "text-gray-900 bg-blue-50"
+                        : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+                      }`}
                   >
                     {item.name}
                   </Link>
                 ))}
 
-                <div className="pt-4 pb-2 border-t border-gray-200/80">
-                  <button 
-                    onClick={() => {
-                      setIsOpen(false);
-                      handleLoginClick();
-                    }}
-                    className="w-full bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 text-white px-4 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2"
-                  >
-                    <FaLock className="w-4 h-4" />
-                    <span>Client Login</span>
-                  </button>
-                </div>
+                <button
+                  onClick={handleLoginClick}
+                  className="mt-3 w-full bg-gray-900 text-white px-4 py-3 rounded-lg font-semibold flex items-center justify-center space-x-2"
+                >
+                  <FaLock className="w-4 h-4" />
+                  <span>Client Login</span>
+                </button>
               </div>
             </div>
           )}

@@ -109,7 +109,7 @@ const Solutions = () => {
   return (
     <section id="solutions" className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50/20 py-28 lg:py-36 overflow-hidden">
 
-      {/* Premium Background Elements */}
+      {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-[120px] translate-x-40 -translate-y-20"></div>
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-slate-600/5 rounded-full blur-[100px] -translate-x-32 translate-y-32"></div>
@@ -121,7 +121,7 @@ const Solutions = () => {
 
       <div className="relative max-w-7xl mx-auto px-6">
 
-        {/* Premium Header */}
+        {/*  Header */}
         <div className="text-center mb-24">
           <div className="inline-flex items-center space-x-4 bg-white/80 backdrop-blur-xl rounded-2xl px-8 py-4 shadow-lg shadow-blue-500/5 border border-slate-200/60 mb-8">
             <div className="w-6 h-0.5 bg-gradient-to-r from-blue-600 to-slate-400 rounded-full"></div>
@@ -150,7 +150,7 @@ const Solutions = () => {
           </div>
         </div>
 
-        {/* Enhanced Capabilities Section */}
+        {/*  Capabilities Section */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
           {capabilities.map((capability, index) => (
             <div 
@@ -177,7 +177,7 @@ const Solutions = () => {
           ))}
         </div>
 
-        {/* Premium Industry Solutions Grid */}
+        {/*  Industry Solutions Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
           {industrySolutions.map((solution, index) => (
             <div 
@@ -255,7 +255,6 @@ const Solutions = () => {
           ))}
         </div>
 
-        {/* Premium CTA Section */}
         <div className="relative bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white rounded-3xl p-12 shadow-2xl overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_0)] bg-[length:40px_40px]"></div>

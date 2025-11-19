@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { 
-  FaPhone, 
-  FaEnvelope, 
-  FaBuilding, 
+import {
+  FaPhone,
+  FaEnvelope,
+  FaBuilding,
   FaComments,
   FaGlobeAmericas,
   FaCheck,
@@ -48,7 +48,7 @@ const Contact = () => {
       console.log('Form submitted:', formData);
       setIsSubmitting(false);
       setSubmitSuccess(true);
-      
+
       // Reset form
       setFormData({
         name: '',
@@ -179,7 +179,7 @@ const Contact = () => {
           </div>
 
           <h2 className="text-5xl md:text-6xl font-light text-slate-900 mb-6 tracking-tight">
-            Contact Our  
+            Contact Our
             <span className="block font-bold bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 bg-clip-text text-transparent">
               Engineering Team
             </span>
@@ -201,13 +201,13 @@ const Contact = () => {
             {/* Enhanced Contact Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {contactMethods.map((method, index) => (
-                <div 
+                <div
                   key={index}
                   className="group relative bg-white/90 backdrop-blur-xl border border-slate-200/80 rounded-2xl p-6 shadow-lg shadow-blue-500/5 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-2"
                 >
                   {/* Gradient Accent */}
                   <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${method.gradient} rounded-t-2xl`}></div>
-                  
+
                   {/* Badge */}
                   <div className="absolute -top-2 -right-2 bg-white/95 backdrop-blur-md rounded-full px-3 py-1 shadow-lg border border-slate-200">
                     <span className="text-xs font-semibold text-slate-700">{method.badge}</span>
@@ -239,7 +239,7 @@ const Contact = () => {
             <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white rounded-2xl p-8 shadow-2xl overflow-hidden">
               {/* Background Pattern */}
               <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_0)] bg-[length:30px_30px]"></div>
-              
+
               <div className="relative">
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mr-4">
@@ -336,7 +336,7 @@ const Contact = () => {
                   <div>
                     <label className="block text-sm font-semibold text-slate-700 mb-3">Full Name *</label>
                     <div className="relative">
-                      <input 
+                      <input
                         type="text"
                         name="name"
                         value={formData.name}
@@ -351,7 +351,7 @@ const Contact = () => {
                   <div>
                     <label className="block text-sm font-semibold text-slate-700 mb-3">Corporate Email *</label>
                     <div className="relative">
-                      <input 
+                      <input
                         type="email"
                         name="email"
                         value={formData.email}
@@ -370,7 +370,7 @@ const Contact = () => {
                   <div>
                     <label className="block text-sm font-semibold text-slate-700 mb-3">Company *</label>
                     <div className="relative">
-                      <input 
+                      <input
                         type="text"
                         name="company"
                         value={formData.company}
@@ -386,7 +386,7 @@ const Contact = () => {
                   <div>
                     <label className="block text-sm font-semibold text-slate-700 mb-3">Business Phone</label>
                     <div className="relative">
-                      <input 
+                      <input
                         type="tel"
                         name="phone"
                         value={formData.phone}
@@ -424,16 +424,20 @@ const Contact = () => {
 
                 {/* Message */}
                 <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-3">Project Requirements *</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-3">
+                    Project Requirements *
+                  </label>
                   <textarea
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
                     rows="6"
                     required
-                    className="w-full px-4 py-4 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 placeholder-slate-400 resize-none shadow-sm"
-                    placeholder="Describe your project requirements, specifications, and timeline..."
-                  />
+                    className="w-full px-4 py-4 bg-white border border-slate-300 rounded-xl 
+                    focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 
+                    placeholder-slate-400 resize-none shadow-sm"
+                    placeholder="Describe your project scope, expected output, deadlines, materials, etc."
+                  ></textarea>
                 </div>
 
                 {/* Submit */}
