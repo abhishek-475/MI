@@ -445,15 +445,7 @@ const Products = () => {
                 Showing all products from our industrial manufacturing catalog
               </p>
             </div>
-            <div className="flex items-center space-x-4">
-              <select className="border border-gray-300 rounded-xl px-4 py-2 text-sm bg-white/50 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                <option>Sort by: Featured</option>
-                <option>Sort by: Name A-Z</option>
-                <option>Sort by: Name Z-A</option>
-                <option>Sort by: Price Low-High</option>
-                <option>Sort by: Price High-Low</option>
-              </select>
-            </div>
+            
           </div>
         </div>
 
