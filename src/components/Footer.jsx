@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
   FaLinkedin,
-  FaTwitter,
   FaYoutube,
   FaArrowRight,
   FaEnvelope,
@@ -12,7 +11,7 @@ import {
   FaCertificate,
   FaMapMarkerAlt,
   FaPhone,
-  FaClock
+  FaClock,
 } from 'react-icons/fa';
 import { 
   FiArrowRight 
@@ -21,7 +20,6 @@ import {
 const Footer = () => {
   const socialLinks = [
     { name: 'LinkedIn', icon: <FaLinkedin className="w-4 h-4" />, href: '#' },
-    { name: 'Twitter', icon: <FaTwitter className="w-4 h-4" />, href: '#' },
     { name: 'YouTube', icon: <FaYoutube className="w-4 h-4" />, href: '#' }
   ];
 
@@ -152,7 +150,7 @@ const Footer = () => {
         </div>
 
         {/* Contact CTA */}
-        <div className="mt-12 mb-8">
+        {/* <div className="mt-12 mb-8">
           <div className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
             <div className="flex flex-col lg:flex-row items-center justify-between">
               <div className="text-center lg:text-left mb-6 lg:mb-0">
@@ -170,10 +168,10 @@ const Footer = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center mt-12">
           <p className="text-gray-400 text-sm flex items-center">
             <span className="w-1 h-1 bg-gray-600 rounded-full mr-2"></span>
             © 2024 Industrial Manufacturing Group. All rights reserved.

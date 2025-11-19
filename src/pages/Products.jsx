@@ -38,7 +38,7 @@ const Products = () => {
       id: 2,
       name: "Hydraulic Systems",
       category: "Fluid Power",
-      image: "https://images.unsplash.com/photo-1603712725038-3f5f1cdd192d?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
       description: "Complete hydraulic systems designed for heavy machinery with enhanced efficiency and reliability.",
       features: ["Energy Efficient", "Low Maintenance", "Custom Configurations"]
     },
@@ -74,7 +74,7 @@ const Products = () => {
       name: "Advanced Hydraulic Systems H-8000",
       category: "hydraulic",
       sku: "IM-HS-8000",
-      image: "https://images.unsplash.com/photo-1581091012184-5c72b266ca9b?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
       description: "Complete hydraulic systems designed for heavy machinery with enhanced efficiency and reliability.",
       features: ["Energy Efficient", "Low Maintenance", "Custom Configurations", "24/7 Support"],
       specifications: {
@@ -268,7 +268,7 @@ const Products = () => {
             <div className="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-sm border border-gray-200/60 mb-6">
               <div className="w-6 h-px bg-gradient-to-r from-blue-600 to-gray-300"></div>
               <span className="text-sm font-semibold text-gray-700 uppercase tracking-wider">Our Products</span>
-              {/* <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div> */}
+              <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div>
             </div>
             <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
               Industrial Components
@@ -547,10 +547,10 @@ const Products = () => {
                     <span>Technical Details</span>
                     <FaArrowRight className="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform duration-200" />
                   </button>
-                  <button className="bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 text-white px-5 py-2.5 rounded-xl font-medium text-sm transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 flex items-center space-x-2">
+                  {/* <button className="bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 text-white px-5 py-2.5 rounded-xl font-medium text-sm transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 flex items-center space-x-2">
                     <FaFileAlt className="w-4 h-4" />
                     <span>Request Quote</span>
-                  </button>
+                  </button> */}
                 </div>
               </div>
               

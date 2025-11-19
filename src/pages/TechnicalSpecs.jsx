@@ -64,7 +64,7 @@ const TechnicalSpecs = () => {
             <div className="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-sm border border-gray-200/60 mb-6">
               <div className="w-6 h-px bg-gradient-to-r from-blue-600 to-gray-300"></div>
               <span className="text-sm font-semibold text-gray-700 uppercase tracking-wider">Technical Excellence</span>
-              {/* <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div> */}
+              <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div>
             </div>
             
             <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">

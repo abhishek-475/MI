@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import B2BPortal from './pages/B2BPortal';
 import Solutions from './pages/Solutions';
 import Footer from './components/Footer'
+import Capabilities from './pages/Capabilities'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path='/b2b' element={<B2BPortal />} />
           <Route path='/solutions' element={<Solutions />} />
+          <Route path='/capabilities' element={<Capabilities />} />
         </Routes>
         <Footer />
       </div>

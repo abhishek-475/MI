@@ -136,7 +136,7 @@ const Contact = () => {
             <span className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
               Enterprise Solutions
             </span>
-            <div className="w-2 h-2 bg-blue-500 rounded-full animate-ping"></div>
+            <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6">
